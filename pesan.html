@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesan & Kontak | KostWash</title>
+</head>
+<body>
+<header>
+<h1>KostWash</h1>
+<p>Smart Laundry untuk Anak Kost</p>
+<nav>
+<ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="layanan.html">Layanan &amp; Harga</a></li>
+<li><a href="tips.html">Tips Cuci Pintar</a></li>
+<li><a href="pesan.html">Pesan &amp; Kontak</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2>Formulir Pemesanan</h2>
+<p>Isi data berikut dengan benar. Kolom bertanda <strong>wajib</strong> harus diisi.</p>
+<form action="#" method="post">
+<fieldset>
+<legend>Data Penghuni</legend>
+<p>
+<label for="nama">Nama Lengkap (wajib):</label><br>
+<input type="text" id="nama" name="nama" required minlength="3" placeholder="Contoh: Budi Santoso">
+</p>
+<p>
+<label for="email">Email (wajib):</label><br>
+<input type="email" id="email" name="email" required placeholder="nama@email.com">
+</p>
+<p>
+<label for="wa">Nomor WhatsApp:</label><br>
+<input type="tel" id="wa" name="wa" pattern="[0-9]{10,13}" placeholder="08123456789">
+</p>
+<p>
+<label for="lantai">Lantai Kost (wajib):</label><br>
+<select id="lantai" name="lantai" required>
+<option value="">-- Pilih Lantai --</option>
+<option value="1">Lantai 1</option>
+<option value="2">Lantai 2</option>
+<option value="3">Lantai 3</option>
+<option value="4">Lantai 4</option>
+</select>
+</p>
+</fieldset>
+<fieldset>
+<legend>Detail Cucian</legend>
+<p>Pilih Paket (wajib):</p>
+<p>
+<input type="radio" id="hemat" name="paket" value="hemat" required>
+<label for="hemat">Hemat Kiloan</label><br>
+<input type="radio" id="kilat" name="paket" value="kilat">
+<label for="kilat">Kilat Deadline</label><br>
+<input type="radio" id="selimut" name="paket" value="selimut">
+<label for="selimut">Selimut &amp; Sprei</label>
+</p>
+<p>
+<label for="berat">Perkiraan Berat (kg):</label><br>
+<input type="number" id="berat" name="berat" min="1" max="20" value="3">
+</p>
+<p>
+<label for="tanggal">Tanggal Jemput (wajib):</label><br>
+<input type="date" id="tanggal" name="tanggal" required>
+</p>
+<p>Tambahan Layanan:</p>
+<p>
+<input type="checkbox" id="setrika" name="tambahan" value="setrika">
+<label for="setrika">Setrika rapi</label><br>
+<input type="checkbox" id="pengering" name="tambahan" value="pengering">
+<label for="pengering">Pakai mesin pengering (musim hujan)</label>
+</p>
+<p>
+<label for="catatan">Catatan Khusus:</label><br>
+<textarea id="catatan" name="catatan" rows="4" cols="40" placeholder="Contoh: kemeja putih jangan dicampur"></textarea>
+</p>
+<p>
+<input type="checkbox" id="setuju" name="setuju" required>
+<label for="setuju">Saya setuju dengan syarat layanan (wajib)</label>
+</p>
+</fieldset>
+<p>
+<button type="submit">Kirim Pesanan</button>
+<button type="reset">Hapus Isian</button>
+</p>
+</form>
+</section>
+<section>
+<h2>Kontak KostWash</h2>
+<ul>
+<li>Alamat: Jl. Kost Pintar No. 12, Jakarta</li>
+<li>WhatsApp: 0812-3456-7890</li>
+<li>Email: halo@kostwash.example</li>
+<li>Jam layanan: Senin - Sabtu, 08.00 - 20.00</li>
+</ul>
+</section>
+</main>
+<footer>
+<hr>
+<p>&copy; 2026 KostWash &ndash; Smart Laundry Anak Kost. Dibuat untuk Tugas Desain Web.</p>
+<p><a href="index.html">Beranda</a> | <a href="layanan.html">Layanan</a> | <a href="tips.html">Tips</a> | <a href="pesan.html">Pesan</a></p>
+</footer>
+</body>
+</html>
